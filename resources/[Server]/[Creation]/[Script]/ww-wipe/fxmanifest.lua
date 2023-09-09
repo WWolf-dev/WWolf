@@ -1,0 +1,32 @@
+fx_version 'cerulean'
+
+game 'gta5'
+
+author 'White Wolf'
+
+version '1.0.0'
+
+description 'Wype script to wype a person using IG command'
+
+lua54 'yes'
+
+shared_scripts {
+    '@es_extended/imports.lua',
+    '@es_extended/locale.lua',
+    'shared/Framework.lua',
+    'shared/Translation.lua',
+    'shared/Webhooks.lua',
+    'shared/Config.lua'
+}
+
+server_scripts {
+    '@oxmysql/lib/MySQL.lua',
+    'server/main.lua'
+}
+
+dependencies {
+    '/server:6000',
+    '/onesync',
+    'oxmysql',
+    '/gameBuild:mpsum2'
+}
