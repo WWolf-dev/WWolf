@@ -1,39 +1,24 @@
 
 ================================================================
-======== txAdmin Starting - 09/09/2023, 11:33:37                
+======== txAdmin Starting - 10/09/2023, 01:41:23                
 ================================================================
 
 ================================================================
-======== Log Rotated - 09/09/2023, 11:33:37                     
+======== Log Rotated - 10/09/2023, 01:41:23                     
 ================================================================
-[11:33:49] txAdmin: Logger started
-
-================================================================
-======== txAdmin Starting - 09/09/2023, 11:36:50                
-================================================================
-[11:37:00] txAdmin: Logger started
-
-================================================================
-======== txAdmin Starting - 09/09/2023, 11:37:16                
-================================================================
-[11:37:21] txAdmin: Logger started
-[11:40:16] txAdmin: Logger started
-[11:41:39] txAdmin: Logger started
-[11:42:16] txAdmin: Logger started
-[11:42:43] [Nbydm#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
-[11:43:13] [Nbydm#1] Wolfy: enabled noclip
-[11:43:52] [Nbydm#1] Wolfy: became mortal (standard mode)
-[11:48:04] [Nbydm#1] Wolfy: enabled noclip
-[11:48:09] [Nbydm#1] Wolfy: became mortal (standard mode)
-[11:50:15] [Nbydm#1] Wolfy: enabled noclip
-[11:50:17] [Nbydm#1] Wolfy: became mortal (standard mode)
-[11:50:19] [Nbydm#1] Wolfy: repaired their vehicle
-[11:51:44] [Nbydm#1] Wolfy: enabled noclip
-[11:55:06] [Nbydm#1] Wolfy: became mortal (standard mode)
-[11:58:53] [Nbydm#1] Wolfy: enabled noclip
-[11:58:54] [Nbydm#1] Wolfy: became mortal (standard mode)
-[12:01:54] [Nbydm#1] Wolfy: enabled noclip
-[12:01:58] [Nbydm#1] Wolfy: became mortal (standard mode)
-[12:01:58] [Nbydm#1] Wolfy: enabled noclip
-[12:15:26] [Nbydm#1] Wolfy: said "/auit"
-[12:15:28] [Nbydm#1] Wolfy: disconnected (Exiting)
+[01:41:36] txAdmin: Logger started
+[01:41:49] [3P4rA#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
+[01:42:41] [3P4rA#1] Wolfy: teleported to coordinates (x=-1034.174, y=-2732.992, z=20.169)
+[01:43:12] [3P4rA#1] Wolfy: teleported to coordinates (x=-1031.298, y=-2727.370, z=13.757)
+[01:43:31] [3P4rA#1] Wolfy: teleported to coordinates (x=-898.685, y=-2709.578, z=20.169)
+[01:49:51] [3P4rA#1] Wolfy: enabled noclip
+[01:49:58] [3P4rA#1] Wolfy: became mortal (standard mode)
+[01:50:09] [3P4rA#1] Wolfy: enabled noclip
+[01:50:18] [3P4rA#1] Wolfy: became mortal (standard mode)
+[01:50:29] [3P4rA#1] Wolfy: enabled noclip
+[01:50:47] [3P4rA#1] Wolfy: became mortal (standard mode)
+[01:51:19] [3P4rA#1] Wolfy: enabled noclip
+[01:51:23] [3P4rA#1] Wolfy: became mortal (standard mode)
+[01:57:27] [3P4rA#1] Wolfy: enabled noclip
+[01:57:30] [3P4rA#1] Wolfy: became mortal (standard mode)
+[01:58:09] [3P4rA#1] Wolfy: disconnected (Exiting)

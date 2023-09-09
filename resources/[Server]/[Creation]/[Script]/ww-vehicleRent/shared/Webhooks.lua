@@ -1,5 +1,5 @@
 -- Pute your discord webhooks here to have log from wipe
-WebhooksLogs = "https://discord.com/api/webhooks/1146051699757301871/K35A1Art3iqnCQnuS-dgM1D7sNd2UXi-ko1SDAkp5psjOeH7RPYmrHEvUeD1YPO-VtPg"
+-- WebhooksLogs = "https://discord.com/api/webhooks/1136007542984691852/PnjjZgKxemzo4pvJwN9MVWTMt2hCN4LFLwoqOzLDre5tC1K1Gw_fVYGKR_xZBzbvMlsE"
 
 -- function sendDiscordLog(xPlayer, targetPlayer)
 --     local targetJob = targetPlayer.getJob()

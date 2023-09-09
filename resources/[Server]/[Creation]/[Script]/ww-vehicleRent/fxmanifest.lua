@@ -2,13 +2,13 @@ fx_version 'cerulean'
 
 game 'gta5'
 
+lua54 'yes'
+
 author 'White Wolf'
 
 version '1.0.0'
 
-description 'Advanced Vehicle Rental Script by White Wolf'
-
-lua54 'yes'
+description 'Advanced Vehicle Rent System by White Wolf'
 
 shared_scripts {
     '@es_extended/imports.lua',
@@ -17,7 +17,11 @@ shared_scripts {
     'shared/Framework.lua',
     'shared/Translation.lua',
     'shared/Webhooks.lua',
-    'shared/Config.lua'
+    'shared/main.lua'
+}
+
+client_scripts {
+    'client/main.lua'
 }
 
 server_scripts {
@@ -29,5 +33,5 @@ dependencies {
     '/server:6000',
     '/onesync',
     'oxmysql',
-    '/gameBuild:mpsum2'
+    '/gameBuild:mpchristmas3'
 }
