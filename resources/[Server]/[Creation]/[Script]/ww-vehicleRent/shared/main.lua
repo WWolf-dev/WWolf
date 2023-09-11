@@ -87,53 +87,53 @@ RentingNPC = {
 
 VehicleCategories = {
     ["Luxe"] = {
-        title = "Catégorie Luxe",
-        description = "Choisssez un véhicule parmi les plus luxueux",
-        icon = "fa-solid fa-circle",
+        IconOfCategory = "fa-solid fa-circle",
         vehicle = {
             {
                 name = "coureur",
                 label = "Coureuse",
-                Quantity = 5
+                Quantity = 5,
+                Price = 1000
             },
             {
                 name = "stingertt",
                 label = "Stingert",
-                Quantity = 10
+                Quantity = 10,
+                Price = 1500
             }
         }
     },
     ["Eco"] = {
-        title = "Catégorie Eco",
-        description = "Choisssez un véhicule parmi les moins chères",
-        icon = "fa-solid fa-circle",
+        IconOfCategory = "fa-solid fa-circle",
         vehicle = {
             {
                 name = "clique2",
                 label = "Clique",
-                Quantity = 15
+                Quantity = 15,
+                Price = 500
             },
             {
                 name = "brigham",
                 label = "Brighame",
-                Quantity = 20
+                Quantity = 20,
+                Price = 100
             }
         }
     },
     ["S.U.V"] = {
-        title = "Catégorie S.U.V",
-        description = "Choisssez un véhicule parmi les plus SUV",
-        icon = "fa-solid fa-circle",
+        IconOfCategory = "fa-solid fa-circle",
         vehicle = {
             {
                 name = "l35",
                 label = "I355",
-                Quantity = 25
+                Quantity = 25,
+                Price = 2000
             },
             {
                 name = "monstrociti",
                 label = "Monstrocitii",
-                Quantity = 30
+                Quantity = 30,
+                Price = 2500
             }
         }
     },

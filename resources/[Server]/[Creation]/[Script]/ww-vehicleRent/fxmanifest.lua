@@ -21,7 +21,8 @@ shared_scripts {
 }
 
 client_scripts {
-    'client/main.lua'
+    'client/main.lua',
+    'client/modules/Rental.lua'
 }
 
 server_scripts {

@@ -17,7 +17,19 @@ Config = {
 -- French Translation
 Locales['fr'] = {
 
-    -- ['name_of_the_blip_public'] = 'Yellow Jacks',
+    ['target_access_menu'] = "Accéder à la location véhicule",
+    ['name_of_the_blip_farm'] = 'Yellow Jacks Farming',
+
+
+
+
+
+    
+--▒█▀▀▄ ▒█▀▀▀ ▒█▀▀█ ▒█░▒█ ▒█▀▀█ 
+--▒█░▒█ ▒█▀▀▀ ▒█▀▀▄ ▒█░▒█ ▒█░▄▄ 
+--▒█▄▄▀ ▒█▄▄▄ ▒█▄▄█ ░▀▄▄▀ ▒█▄▄█
+
+    ['debug_acess_menu'] = "Menu access success",
     -- ['name_of_the_blip_farm'] = 'Yellow Jacks Farming',
 
 }
@@ -29,7 +41,7 @@ Locales['fr'] = {
 -- English Translation
 Locales['en'] = {
 
-    -- ['name_of_the_blip_public'] = 'Yellow Jacks',
-    -- ['name_of_the_blip_farm'] = 'Yellow Jacks Farming',
+    ['target_access_menu'] = "Access vehicle renting",
+    ['name_of_the_blip_farm'] = 'Yellow Jacks Farming',
 
 }
