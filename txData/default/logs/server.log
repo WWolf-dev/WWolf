@@ -1,35 +1,33 @@
 
 ================================================================
-======== Log Rotated - 11/09/2023, 00:00:00                     
+======== txAdmin Starting - 17/09/2023, 14:34:08                
 ================================================================
-[01:22:02] [JYPLz#1] Wolfy: enabled noclip
-[01:22:05] [JYPLz#1] Wolfy: became mortal (standard mode)
-[01:22:11] [JYPLz#1] Wolfy: enabled noclip
-[01:22:12] [JYPLz#1] Wolfy: became mortal (standard mode)
-[01:23:27] [JYPLz#1] Wolfy: enabled noclip
-[01:23:28] [JYPLz#1] Wolfy: became mortal (standard mode)
-[01:23:52] [JYPLz#1] Wolfy: turned show player IDs on
-[01:23:56] [JYPLz#1] Wolfy: turned show player IDs off
-[01:24:26] [JYPLz#1] Wolfy: enabled noclip
-[01:24:29] [JYPLz#1] Wolfy: became mortal (standard mode)
-[01:38:10] [JYPLz#1] Wolfy: died from suicide (Falling)
-[01:38:24] [JYPLz#1] Wolfy: disconnected (Exiting)
 
 ================================================================
-======== txAdmin Starting - 11/09/2023, 14:55:16                
+======== Log Rotated - 17/09/2023, 14:34:08                     
 ================================================================
-[14:55:33] txAdmin: Logger started
+[14:34:22] txAdmin: Logger started
 
 ================================================================
-======== txAdmin Starting - 11/09/2023, 14:55:54                
+======== txAdmin Starting - 17/09/2023, 14:35:08                
 ================================================================
-[14:56:02] txAdmin: Logger started
-[14:56:04] [fdKea#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
+[14:35:14] txAdmin: Logger started
+[14:37:22] [HzCHV#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
+[14:38:06] [HzCHV#1] Wolfy: enabled noclip
+[14:38:16] [HzCHV#1] Wolfy: became mortal (standard mode)
+[14:38:17] [HzCHV#1] Wolfy: enabled noclip
+[14:38:17] [HzCHV#1] Wolfy: became mortal (standard mode)
+[14:38:20] [HzCHV#1] Wolfy: enabled noclip
+[14:38:24] [HzCHV#1] Wolfy: became mortal (standard mode)
+[14:38:34] [HzCHV#1] Wolfy: enabled noclip
+[14:38:37] [HzCHV#1] Wolfy: became mortal (standard mode)
+[15:35:37] [HzCHV#1] Wolfy: disconnected (Exiting)
 
 ================================================================
-======== txAdmin Starting - 11/09/2023, 18:39:05                
+======== txAdmin Starting - 17/09/2023, 19:36:49                
 ================================================================
-[18:39:10] txAdmin: Logger started
-[18:39:12] [Ycw86#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
-[20:10:51] [Ycw86#1] Wolfy: died from suicide (Falling)
-[20:24:22] [Ycw86#1] Wolfy: disconnected (Exiting)
+[19:37:08] txAdmin: Logger started
+[19:37:10] [VXJ7G#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
+[20:18:39] [VXJ7G#1] Wolfy: said "/CreateBlips"
+[20:20:58] [VXJ7G#1] Wolfy: said "/BlipManagement"
+[20:57:15] [VXJ7G#1] Wolfy: died from suicide (Falling)

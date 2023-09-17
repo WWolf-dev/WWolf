@@ -127,11 +127,11 @@ local function LoadSettings()
     self.weather = settings.weather or 'CLEAR'
     self.hours = settings.hours or 08
     self.mins = settings.mins or 00
-    self.dynamic = settings.dynamic == true and true or false
-    self.blackout = settings.blackout == true and true or false
-    self.freeze = settings.freeze == true and true or false
-    self.instanttime = settings.instanttime == true and true or false
-    self.instantweather = settings.instantweather == true and true or false
+    self.dynamic = settings.dynamic or true
+    self.blackout = settings.blackout or false
+    self.freeze = settings.freeze or false
+    self.instanttime = settings.instanttime or false
+    self.instantweather = settings.instantweather or false
     self.tsunami = false
     print('^3['..resource_name..'] - Saved settings applied.^0')
     if Config.Framework ~= 'vrp' or Config.Framework ~= 'aceperms' then

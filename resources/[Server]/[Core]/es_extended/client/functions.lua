@@ -392,7 +392,7 @@ function ESX.Game.DeleteVehicle(vehicle)
 end
 
 function ESX.Game.DeleteObject(object)
-    SetEntityAsMissionEntity(object, false, true)
+    SetEntityAsMissionEntity(object, false, true)   
     DeleteObject(object)
 end
 

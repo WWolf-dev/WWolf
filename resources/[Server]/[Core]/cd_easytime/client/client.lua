@@ -8,7 +8,7 @@
 
 QBCore = nil
 
-CreateThread(function()
+Citizen.CreateThread(function()
     if Config.Framework == 'esx' then
         ESX = exports['es_extended']:getSharedObject()
 
@@ -296,11 +296,15 @@ AddEventHandler('cd_easytime:StartTsunamiCountdown', function(boolean)
         PauseSync.state = true
         PauseSync.time = self.hours
         TsunamiCanceled = false
-        ChangeWeather('HALLOWEEN', false, Config.TsunamiWarning_time*60*1000/4/1000+0.0)
-        Wait(Config.TsunamiWarning_time*60*1000/4*2)
+        ChangeWeather('HALLOWEEN', false, 1000)
+        Wait(1000)
         if TsunamiCanceled then return end
         ChangeBlackout(true)
         SendNUIMessage({action = 'playsound'})
+        Wait(180000)  -- Wait 3 minutes
+        PauseSync.state = false
+        TsunamiCanceled = true
+        TriggerServerEvent('cd_easytime:SyncMe')
     else
         PauseSync.state = false
         TsunamiCanceled = true

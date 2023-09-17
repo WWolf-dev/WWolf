@@ -1,9 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
-author 'discord.gg/codesign'
+author 'Codesign#2715'
 description 'Codesign Weather & Time Managment'
-version '1.3.7'
-lua54 'yes'
+version '1.3.6'
 
 shared_scripts {
     'configs/locales.lua',

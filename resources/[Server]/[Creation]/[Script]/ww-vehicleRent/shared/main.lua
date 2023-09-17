@@ -20,6 +20,13 @@ RentingBlip = {
         Scale = 0.8,
         Name = "Rental | Random"
     },
+    ["Delnamas"] = {
+        Coords = vector3(-854.5040, -2400.2678, 13.9444),
+        Sprite = 1,
+        Color = 1,
+        Scale = 0.8,
+        Name = "Delna | route"
+    }
 }
 
 
@@ -82,7 +89,23 @@ RentingNPC = {
                 VehicleHeading = 324.6566
             }
         }
-    }
+    },
+    ["Delnamas"] = {
+        Coords = vector4(-854.5040, -2400.2678, 12.9444, 4.6893),
+        Name = `A_C_Pug_02`,
+        Scenario = "",
+
+        Vehicle = {
+            {
+                VehicleSpawnPoint = vector3(-855.4591, -2386.7100, 13.9444),
+                VehicleHeading = 4.1058
+            },
+            {
+                VehicleSpawnPoint = vector3(-862.2260, -2413.5344, 13.9030),
+                VehicleHeading = 151.8074
+            }
+        }
+    },
 }
 
 VehicleCategories = {
@@ -134,6 +157,23 @@ VehicleCategories = {
                 label = "Monstrocitii",
                 Quantity = 30,
                 Price = 2500
+            }
+        }
+    },
+    ["Delna"] = {
+        IconOfCategory = "fa-solid fa-circle",
+        vehicle = {
+            {
+                name = "outlaw",
+                label = "Gerar",
+                Quantity = 50,
+                Price = 1000
+            },
+            {
+                name = "guardian",
+                label = "Michel",
+                Quantity = 5,
+                Price = 1500
             }
         }
     },

@@ -101,59 +101,37 @@ if FrameworkUse == "ESX" then     --𝔽ℝ𝔸𝕄𝔼𝕎𝕆ℝ𝕂 𝕋𝕐�
                     description = "Rendre un véhicule une fois la location finit",
                     icon = "fa-solid fa-card",
                     onSelect = function()
-                        ReturnVehicleMenu()
                     end
                 },
                 {
                     title = "Réserver un véhicule",
-                    description = "Reservez un véhicule à l'avance",
+                    description = "SOON...",
                     icon = "fa-solid fa-card",
-                    onSelect = function()
-                        print("yey")
-                    end
+                    disabled = true
                 },
                 {
                     title = "Historique de location",
-                    description = "Regardez les différents véhicule que vous avez loué",
+                    description = "SOON...",
                     icon = "fa-solid fa-card",
-                    onSelect = function()
-                        print("yey")
-                    end
+                    disabled = true
                 },
                 {
                     title = "Point de fidélité",
-                    description = "Regardez combien de points vous avez gagné",
+                    description = "SOON...",
                     icon = "fa-solid fa-card",
-                    onSelect = function()
-                        print("yey")
-                    end
+                    disabled = true
                 },
                 {
                     title = "Informations",
-                    description = "Consultez les informations sur les locations",
+                    description = "SOON...",
                     icon = "fa-solid fa-card",
-                    onSelect = function()
-                        print("yey")
-                    end
+                    disabled = true
                 },
             }
         })
 
         lib.showContext("main_menu_npc_rental")
     end
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
