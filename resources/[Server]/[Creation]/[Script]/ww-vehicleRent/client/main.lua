@@ -134,25 +134,6 @@ if FrameworkUse == "ESX" then     --𝔽ℝ𝔸𝕄𝔼𝕎𝕆ℝ𝕂 𝕋𝕐�
     end
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         -- Soon QBCore support
 elseif FrameworkUse == "QBCore" then
     return nil

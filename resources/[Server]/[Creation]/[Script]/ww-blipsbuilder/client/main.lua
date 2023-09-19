@@ -20,10 +20,11 @@ if FrameworkUse == "ESX" then
     AddEventHandler(playerLoadedEvent, function(xPlayer)
         ESX.PlayerData = xPlayer  -- Store player data locally
         PlayerLoaded = true
+        LoadAllBlipsFromDB()
     end)
 
     -- Local function to display the Blips creation menu
-    local function BlipsCreatorMenu()
+    function BlipsCreatorMenu()
         -- Menu structure
         lib.registerContext({
             id = "main_menu_blips_creator",
@@ -147,7 +148,51 @@ if FrameworkUse == "ESX" then
             print("Blip alpha:", tonumber(input[4]))
             print("Blip name:", input[5])
         end
+
+        local coords = GetEntityCoords(PlayerPedId())
+        local blipData = {
+            name = input[5],
+            sprite = tonumber(input[1]),
+            size = tonumber(input[2]),
+            color = tonumber(input[3]),
+            alpha = tonumber(input[4]),
+            coords = {
+                x = coords.x,
+                y = coords.y,
+                z = coords.z
+            }
+        }
+
+        TriggerServerEvent('ww-blipsbuilder:Server:storeBlipInDB', blipData)
     end
+
+    function LoadAllBlipsFromDB()
+        -- Fetch all blips from the server
+        ESX.TriggerServerCallback('getAllBlipsFromDB', function(blips)
+            if blips then
+                for _, blipData in ipairs(blips) do
+                    -- Convert stored JSON coords back to a table
+                    local coords = json.decode(blipData.blip_coords)
+                    
+                    -- Create the blip using the retrieved data
+                    local blip = AddBlipForCoord(coords.x, coords.y, coords.z)
+                    
+                    SetBlipSprite(blip, blipData.blip_sprite)
+                    SetBlipDisplay(blip, 4)
+                    SetBlipScale(blip, blipData.blip_size)
+                    SetBlipColour(blip, blipData.blip_color)
+                    SetBlipAlpha(blip, blipData.blip_alpha)
+                    SetBlipAsShortRange(blip, true)
+                    
+                    -- Set blip name
+                    BeginTextCommandSetBlipName("STRING")
+                    AddTextComponentSubstringPlayerName(blipData.blip_name)
+                    EndTextCommandSetBlipName(blip)
+                end
+            end
+        end)
+    end
+    
 
     -- Register a command for admin users to create blips
     RegisterCommand(CommandName, function()
