@@ -28,15 +28,15 @@ server_scripts {
     'server/main.lua'
 }
 
-ui_page 'html/index.html'
+ui_page 'web/html/index.html'
 
 files {
-    'html/index.html',
-    'html/css/style.css',
-    'html/js/script.js',
-    'html/fonts/*',
-    'html/img/*',
-    'html/sound/*'
+    'web/html/index.html',
+    'web/css/style.css',
+    'web/js/script.js',
+    'web/fonts/*',
+    'web/img/*',
+    'web/sound/*'
 }
 
 dependencies {

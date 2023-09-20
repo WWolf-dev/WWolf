@@ -46,10 +46,14 @@ if FrameworkUse == "ESX" then     --𝔽ℝ𝔸𝕄𝔼𝕎𝕆ℝ𝕂 𝕋𝕐�
                 print('Error fetching player details.')
             end
         end)
+        DisplayHud(false)
+        DisplayRadar(false)
     end)
 
     RegisterNUICallback('closeInterface', function()
         SetNuiFocus(false, false) -- désactive l'interface utilisateur
+        DisplayHud(true)
+        DisplayRadar(true)
     end)
 
     RegisterNuiCallback('goIntoBlipBuilder', function()
