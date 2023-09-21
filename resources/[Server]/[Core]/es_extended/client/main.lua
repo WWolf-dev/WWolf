@@ -702,3 +702,45 @@ end
 RegisterNetEvent('esx:updatePlayerData', function(key, val)
 	ESX.SetPlayerData(key, val)
 end)
+
+function RespawnPed(ped, coords, heading)
+	SetEntityCoordsNoOffset(ped, coords.x, coords.y, coords.z, false, false, false)
+	NetworkResurrectLocalPlayer(coords.x, coords.y, coords.z, heading, true, false)
+	SetPlayerInvincible(ped, false)
+	ClearPedBloodDamage(ped)
+
+	TriggerEvent('esx_basicneeds:resetStatus')
+	TriggerServerEvent('esx:onPlayerSpawn')
+	TriggerEvent('esx:onPlayerSpawn')
+	TriggerEvent('playerSpawned') -- compatibility with old scripts, will be removed soon
+end
+
+function EndDeathCam()
+	ClearFocus()
+	RenderScriptCams(false, false, 0, true, false)
+	DestroyCam(cam, false)
+	cam = nil
+end
+
+RegisterNetEvent('esx_ambulancejob:revive')
+AddEventHandler('esx_ambulancejob:revive', function()
+  local playerPed = PlayerPedId()
+  local coords = GetEntityCoords(playerPed)
+  TriggerServerEvent('esx_ambulancejob:setDeathStatus', false)
+
+  DoScreenFadeOut(800)
+
+  while not IsScreenFadedOut() do
+    Wait(50)
+  end
+
+  local formattedCoords = {x = ESX.Math.Round(coords.x, 1), y = ESX.Math.Round(coords.y, 1), z = ESX.Math.Round(coords.z, 1)}
+
+  RespawnPed(playerPed, formattedCoords, 0.0)
+  isDead = false
+  ClearTimecycleModifier()
+  SetPedMotionBlur(playerPed, false)
+  ClearExtraTimecycleModifier()
+  EndDeathCam()
+  DoScreenFadeIn(800)
+end)
