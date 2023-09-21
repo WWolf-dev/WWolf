@@ -565,3 +565,7 @@ end, true, { help = TranslateCap('revive_help'), validate = true, arguments = {
 ESX.RegisterCommand('reviveall', "admin", function(xPlayer, args, showError)
 	TriggerClientEvent('esx_ambulancejob:revive', -1)
 end, false)
+
+-- ESX.RegisterCommand("AdminItem", "admin", function(xPlayer, args, showError)
+-- 	exports.ox_inventory:RegisterStash("admin_stash", "Admin Give", 100, 50000, nil, groups, coords)
+-- end)

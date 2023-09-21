@@ -406,10 +406,6 @@ end
         end)
     end)
 
-
-
-
-
 -- If using QBCore, this script is currently not supported
 elseif FrameworkUse == "QBCore" then
     return nil
