@@ -73,10 +73,23 @@ local function createShop(shopType, id)
 
 	if not shop then return end
 
-	local shopLocations = shop[locations] or shop.locations
-	local groups = shop.groups or shop.jobs
+	local store = (shop[locations] or shop.locations)?[id]
 
-	if not shopLocations or not shopLocations[id] then return end
+	if not store then return end
+
+	local groups = shop.groups or shop.jobs
+    local coords
+
+    if shared.target then
+        if store.length then
+            local z = store.loc.z + math.abs(store.minZ - store.maxZ) / 2
+            coords = vec3(store.loc.x, store.loc.y, z)
+        else
+            coords = store.coords or store.loc
+        end
+    else
+        coords = store
+    end
 
 	---@type OxShop
 	shop[id] = {
@@ -86,7 +99,7 @@ local function createShop(shopType, id)
 		items = table.clone(shop.inventory),
 		slots = #shop.inventory,
 		type = 'shop',
-		coords = shared.target and shop.targets?[id]?.loc or shopLocations[id],
+		coords = coords,
 		distance = shared.target and shop.targets?[id]?.distance,
 	}
 
@@ -140,21 +153,12 @@ lib.callback.register('ox_inventory:openShop', function(source, data)
 	return { label = left.label, type = left.type, slots = left.slots, weight = left.weight, maxWeight = left.maxWeight }, shop
 end)
 
-local table = lib.table
-
--- http://lua-users.org/wiki/FormattingNumbers
--- credit http://richard.warburton.it
-local function comma_value(n)
-	local left, num, right = string.match(n,'^([^%d]*%d)(%d*)(.-)$')
-	return left..(num:reverse():gsub('(%d%d%d)','%1,'):reverse())..right
-end
-
 local function canAffordItem(inv, currency, price)
 	local canAfford = price >= 0 and Inventory.GetItem(inv, currency, false, true) >= price
 
 	return canAfford or {
 		type = 'error',
-		description = locale('cannot_afford', ('%s%s'):format((currency == 'money' and locale('$') or comma_value(price)), (currency == 'money' and comma_value(price) or ' '..Items(currency).label)))
+		description = locale('cannot_afford', ('%s%s'):format((currency == 'money' and locale('$') or math.groupdigits(price)), (currency == 'money' and math.groupdigits(price) or ' '..Items(currency).label)))
 	}
 end
 
@@ -263,7 +267,7 @@ lib.callback.register('ox_inventory:buyItem', function(source, data)
 
 				if server.syncInventory then server.syncInventory(playerInv) end
 
-				local message = locale('purchased_for', count, fromItem.label, (currency == 'money' and locale('$') or comma_value(price)), (currency == 'money' and comma_value(price) or ' '..Items(currency).label))
+				local message = locale('purchased_for', count, fromItem.label, (currency == 'money' and locale('$') or math.groupdigits(price)), (currency == 'money' and math.groupdigits(price) or ' '..Items(currency).label))
 
 				if server.loglevel > 0 then
 					if server.loglevel > 1 or fromData.price >= 500 then

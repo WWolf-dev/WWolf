@@ -18,7 +18,7 @@ if FrameworkUse == "ESX" then
 
     ESX.RegisterServerCallback('getAdminGrade', function(source, cb)
         local xPlayer = ESX.GetPlayerFromId(source)
-
+        
         if IsGradeAuthorized(xPlayer.getGroup()) then
             cb(true)
         else
@@ -62,9 +62,48 @@ if FrameworkUse == "ESX" then
         end)
     end)
 
+    RegisterServerEvent('ww-blipsbuilder:Server:updateBlipInDB')
+    AddEventHandler('ww-blipsbuilder:Server:updateBlipInDB', function(blipData)
+        local query = 'UPDATE blips SET blip_name = @name, blip_sprite = @sprite, blip_size = @size, blip_color = @color, blip_alpha = @alpha, blip_coords = @coords WHERE id = @id'
+        local values = {
+            ['@id'] = blipData.id,
+            ['@name'] = blipData.name,
+            ['@sprite'] = blipData.sprite,
+            ['@size'] = blipData.size,
+            ['@color'] = blipData.color,
+            ['@alpha'] = blipData.alpha,
+            ['@coords'] = json.encode(blipData.coords)
+        }
+
+        MySQL.Async.execute(query, values, function(rowsChanged)
+            if rowsChanged > 0 then
+                print("Blip updated!")
+            else
+                print("Error updating blip!")
+            end
+        end)
+    end)
+
+    RegisterServerEvent('ww-blipsbuilder:Server:deleteBlipInDB')
+    AddEventHandler('ww-blipsbuilder:Server:deleteBlipInDB', function(blipId)
+        local query = 'DELETE FROM blips WHERE id = @id'
+        local values = {
+            ['@id'] = blipId
+        }
+
+        MySQL.Async.execute(query, values, function(rowsChanged)
+            if rowsChanged > 0 then
+                print("Blip deleted!")
+            else
+                print("Error deleting blip!")
+            end
+        end)
+    end)
 
 
 
+
+    
     -- Soon QBCore support
 elseif FrameworkUse == "QBCore" then
     return nil

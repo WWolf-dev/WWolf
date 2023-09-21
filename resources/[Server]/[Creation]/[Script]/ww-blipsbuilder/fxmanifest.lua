@@ -35,7 +35,3 @@ dependencies {
     'oxmysql',
     '/gameBuild:mpchristmas3'
 }
-
-exports {
-    'BlipsCreatorMenu'
-}
