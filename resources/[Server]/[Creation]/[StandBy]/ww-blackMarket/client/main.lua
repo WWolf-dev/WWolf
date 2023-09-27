@@ -22,6 +22,30 @@ if FrameworkUse == "ESX" then
         PlayerLoaded = true
     end)
 
+    function UseKey()
+        lib.registerContext({
+            id = "BlackMarket_main_menu",
+            title = "Black Market",
+            icon = "fas fa-shopping-cart",
+            options = {
+                {
+                    title = "Buy",
+                    description = "Buy items from the black market",
+                    icon = "fas fa-shopping-cart",
+                    onSelected = function()
+                        print("Buy selected")
+                    end
+                }
+            }
+        })
+
+        lib.showContext("BlackMarket_main_menu")
+    end
+
+    RegisterNetEvent("ww-blackMarket:Client:openMenu")
+    AddEventHandler("ww-blackMarket:Client:openMenu", function()
+        UseKey()
+    end)
 
 
 

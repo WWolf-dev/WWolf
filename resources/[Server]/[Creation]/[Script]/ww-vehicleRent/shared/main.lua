@@ -160,7 +160,7 @@ VehicleCategories = {
             }
         }
     },
-    ["Delna"] = {
+    ["test"] = {
         IconOfCategory = "fa-solid fa-circle",
         vehicle = {
             {

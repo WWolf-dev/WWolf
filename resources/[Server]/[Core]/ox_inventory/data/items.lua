@@ -229,4 +229,18 @@ return {
 		stack = true,
 		close = true,
 	},
+
+	["usb_key"] = {
+		label = "Clé USB",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["carwashkit"] = {
+		label = "Kit de Lavage",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
 }
