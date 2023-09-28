@@ -1,112 +1,34 @@
 
 ================================================================
-======== txAdmin Starting - 27/09/2023, 13:55:23                
+======== txAdmin Starting - 28/09/2023, 17:38:22                
 ================================================================
 
 ================================================================
-======== Log Rotated - 27/09/2023, 13:55:23                     
+======== Log Rotated - 28/09/2023, 17:38:22                     
 ================================================================
-[13:55:38] txAdmin: Logger started
+[17:38:34] txAdmin: Logger started
 
 ================================================================
-======== txAdmin Starting - 27/09/2023, 13:55:45                
+======== txAdmin Starting - 28/09/2023, 17:39:25                
 ================================================================
-[13:55:57] txAdmin: Logger started
-
-================================================================
-======== txAdmin Starting - 27/09/2023, 14:37:49                
-================================================================
-[14:37:53] txAdmin: Logger started
-
-================================================================
-======== txAdmin Starting - 27/09/2023, 14:39:09                
-================================================================
-[14:39:13] txAdmin: Logger started
-[14:39:20] [AnNGP#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
-[14:47:31] [AnNGP#1] Wolfy: enabled noclip
-[14:52:05] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:12:17] [AnNGP#1] Wolfy: enabled noclip
-[15:12:26] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:19:43] [AnNGP#1] Wolfy: enabled noclip
-[15:19:45] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:19:54] [AnNGP#1] Wolfy: enabled noclip
-[15:19:55] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:19:56] [AnNGP#1] Wolfy: enabled noclip
-[15:19:56] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:20:19] [AnNGP#1] Wolfy: enabled noclip
-[15:20:30] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:20:59] [AnNGP#1] Wolfy: enabled noclip
-[15:21:06] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:21:22] [AnNGP#1] Wolfy: enabled noclip
-[15:21:28] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:24:43] [AnNGP#1] Wolfy: enabled noclip
-[15:25:06] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:40:32] [AnNGP#1] Wolfy: enabled noclip
-[15:40:37] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:40:38] [AnNGP#1] Wolfy: enabled noclip
-[15:40:58] [AnNGP#1] Wolfy: became mortal (standard mode)
-[15:58:14] [AnNGP#1] Wolfy: enabled noclip
-[15:58:21] [AnNGP#1] Wolfy: became mortal (standard mode)
-[16:02:16] [AnNGP#1] Wolfy: enabled noclip
-[16:02:37] [AnNGP#1] Wolfy: became mortal (standard mode)
-[16:02:38] [AnNGP#1] Wolfy: enabled noclip
-[16:25:20] [AnNGP#1] Wolfy: became mortal (standard mode)
-
-================================================================
-======== txAdmin Starting - 27/09/2023, 16:58:33                
-================================================================
-[16:58:37] txAdmin: Logger started
-[16:58:59] [caEwU#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
-[17:03:10] [caEwU#1] Wolfy: disconnected (Exiting)
-
-================================================================
-======== txAdmin Starting - 27/09/2023, 17:03:13                
-================================================================
-[17:03:17] txAdmin: Logger started
-[17:03:23] [PCLE4#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
-[17:15:17] [PCLE4#1] Wolfy: enabled noclip
-[17:15:17] [PCLE4#1] Wolfy: became mortal (standard mode)
-[17:15:43] [PCLE4#1] Wolfy: enabled noclip
-[17:15:43] [PCLE4#1] Wolfy: became mortal (standard mode)
-[17:17:34] [PCLE4#1] Wolfy: enabled noclip
-[17:17:34] [PCLE4#1] Wolfy: became mortal (standard mode)
-[17:30:58] [PCLE4#1] Wolfy: enabled noclip
-[17:30:58] [PCLE4#1] Wolfy: became mortal (standard mode)
-[17:31:31] [PCLE4#1] Wolfy: enabled noclip
-[17:31:32] [PCLE4#1] Wolfy: became mortal (standard mode)
-[18:05:45] [PCLE4#1] Wolfy: died from suicide (Falling)
-[19:50:36] [PCLE4#1] Wolfy: enabled noclip
-[19:50:38] [PCLE4#1] Wolfy: became mortal (standard mode)
-[20:58:58] [PCLE4#1] Wolfy: enabled noclip
-[20:59:20] [PCLE4#1] Wolfy: became mortal (standard mode)
-[21:03:44] [PCLE4#1] Wolfy: enabled noclip
-[21:03:45] [PCLE4#1] Wolfy: became mortal (standard mode)
-[21:05:29] [PCLE4#1] Wolfy: enabled noclip
-[21:05:32] [PCLE4#1] Wolfy: became mortal (standard mode)
-[21:06:46] [PCLE4#1] Wolfy: enabled noclip
-[21:06:47] [PCLE4#1] Wolfy: became mortal (standard mode)
-[21:06:54] [PCLE4#1] Wolfy: enabled noclip
-[21:06:56] [PCLE4#1] Wolfy: became mortal (standard mode)
-[21:06:57] [PCLE4#1] Wolfy: enabled noclip
-[21:06:59] [PCLE4#1] Wolfy: became mortal (standard mode)
-[21:07:01] [PCLE4#1] Wolfy: enabled noclip
-[21:07:04] [PCLE4#1] Wolfy: became mortal (standard mode)
-[21:09:43] [PCLE4#1] Wolfy: died from suicide (Rammed by Vehicle)
-[21:13:52] [PCLE4#1] Wolfy: enabled noclip
-[21:13:55] [PCLE4#1] Wolfy: became mortal (standard mode)
-[21:14:46] [PCLE4#1] Wolfy: enabled noclip
-[21:14:46] [PCLE4#1] Wolfy: became mortal (standard mode)
-[22:02:38] [PCLE4#1] Wolfy: enabled noclip
-[22:02:45] [PCLE4#1] Wolfy: became mortal (standard mode)
-[22:35:21] [PCLE4#1] Wolfy: died from suicide (Falling)
-[22:55:45] [PCLE4#1] Wolfy: enabled noclip
-[22:55:53] [PCLE4#1] Wolfy: became mortal (standard mode)
-[23:03:20] [PCLE4#1] Wolfy: died from suicide (Fist)
-[23:22:09] [PCLE4#1] Wolfy: enabled noclip
-[23:22:14] [PCLE4#1] Wolfy: caused an explosion (PLANE)
-[23:22:14] [PCLE4#1] Wolfy: caused an explosion (PLANE)
-[23:22:20] [PCLE4#1] Wolfy: caused an explosion (CAR)
-[23:22:35] [PCLE4#1] Wolfy: became mortal (standard mode)
-[23:22:59] [PCLE4#1] Wolfy: enabled noclip
-[23:22:59] [PCLE4#1] Wolfy: became mortal (standard mode)
-[23:23:50] [PCLE4#1] Wolfy: disconnected (Exiting)
+[17:39:31] txAdmin: Logger started
+[17:39:46] [zf7c9#1] Wolfy: joined with identifiers [license:525fa2ba075115294b0606735621fca0282600d0; xbl:2535450397870124; live:844425512482730; discord:1012804832777744434; fivem:6862164; license2:719ea9efd4a6e5f19a4005effb58b60b1e6b0aaa]
+[17:40:19] [zf7c9#1] Wolfy: enabled noclip
+[17:40:24] [zf7c9#1] Wolfy: became mortal (standard mode)
+[17:41:37] [zf7c9#1] Wolfy: enabled noclip
+[17:42:48] [zf7c9#1] Wolfy: became mortal (standard mode)
+[17:45:17] [zf7c9#1] Wolfy: repaired their vehicle
+[17:45:47] [zf7c9#1] Wolfy: repaired their vehicle
+[17:46:17] [zf7c9#1] Wolfy: repaired their vehicle
+[17:48:29] [zf7c9#1] Wolfy: repaired their vehicle
+[17:48:41] [zf7c9#1] Wolfy: repaired their vehicle
+[17:50:16] [zf7c9#1] Wolfy: repaired their vehicle
+[17:50:56] [zf7c9#1] Wolfy: repaired their vehicle
+[18:00:34] [zf7c9#1] Wolfy: caused an explosion (CAR)
+[18:00:35] [zf7c9#1] Wolfy: died from suicide (Explosion)
+[18:00:37] [zf7c9#1] Wolfy: enabled noclip
+[18:00:37] [zf7c9#1] Wolfy: became mortal (standard mode)
+[18:00:42] [zf7c9#1] Wolfy: enabled noclip
+[18:00:42] [zf7c9#1] Wolfy: became mortal (standard mode)
+[18:00:47] [zf7c9#1] Wolfy: enabled noclip
+[18:01:13] [zf7c9#1] Wolfy: became mortal (standard mode)
