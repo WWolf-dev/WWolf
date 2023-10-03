@@ -1,0 +1,1 @@
+ww = exports['ww-lib']:object()

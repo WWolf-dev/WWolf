@@ -1,0 +1,5 @@
+A FIX
+
+Regler le problem de restart avec blip
+Regler le problem de restart avec blip area
+Regler le problem de restart avec blip radius
