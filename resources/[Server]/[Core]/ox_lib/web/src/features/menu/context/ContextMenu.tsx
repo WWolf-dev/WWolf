@@ -19,7 +19,7 @@ const useStyles = createStyles((theme) => ({
     top: '15%',
     right: '25%',
     width: 320,
-    height: 580
+    height: 580,
   },
   header: {
     justifyContent: 'center',

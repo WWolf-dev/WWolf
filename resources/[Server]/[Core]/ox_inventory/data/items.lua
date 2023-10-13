@@ -216,9 +216,142 @@ return {
 		weight = 80,
 	},
 
+	["alive_chicken"] = {
+		label = "Living chicken",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["blowpipe"] = {
+		label = "Blowtorch",
+		weight = 2,
+		stack = true,
+		close = true,
+	},
+
 	["bread"] = {
 		label = "Bread",
 		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["cannabis"] = {
+		label = "Cannabis",
+		weight = 3,
+		stack = true,
+		close = true,
+	},
+
+	["carokit"] = {
+		label = "Body Kit",
+		weight = 3,
+		stack = true,
+		close = true,
+	},
+
+	["carotool"] = {
+		label = "Tools",
+		weight = 2,
+		stack = true,
+		close = true,
+	},
+
+	["carwashkit"] = {
+		label = "Car Wash Kit",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["clothe"] = {
+		label = "Cloth",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["copper"] = {
+		label = "Copper",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["cutted_wood"] = {
+		label = "Cut wood",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["diamond"] = {
+		label = "Diamond",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["essence"] = {
+		label = "Gas",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["fabric"] = {
+		label = "Fabric",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["fish"] = {
+		label = "Fish",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["fixkit"] = {
+		label = "Repair Kit",
+		weight = 3,
+		stack = true,
+		close = true,
+	},
+
+	["fixtool"] = {
+		label = "Repair Tools",
+		weight = 2,
+		stack = true,
+		close = true,
+	},
+
+	["gazbottle"] = {
+		label = "Gas Bottle",
+		weight = 2,
+		stack = true,
+		close = true,
+	},
+
+	["gold"] = {
+		label = "Gold",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["iron"] = {
+		label = "Iron",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["marijuana"] = {
+		label = "Marijuana",
+		weight = 2,
 		stack = true,
 		close = true,
 	},
@@ -230,6 +363,48 @@ return {
 		close = true,
 	},
 
+	["packaged_chicken"] = {
+		label = "Chicken fillet",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["packaged_plank"] = {
+		label = "Packaged wood",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["petrol"] = {
+		label = "Oil",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["petrol_raffin"] = {
+		label = "Processed oil",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["slaughtered_chicken"] = {
+		label = "Slaughtered chicken",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["stone"] = {
+		label = "Stone",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
 	["usb_key"] = {
 		label = "Clé USB",
 		weight = 1,
@@ -237,8 +412,22 @@ return {
 		close = true,
 	},
 
-	["carwashkit"] = {
-		label = "Kit de Lavage",
+	["washed_stone"] = {
+		label = "Washed stone",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["wood"] = {
+		label = "Wood",
+		weight = 1,
+		stack = true,
+		close = true,
+	},
+
+	["wool"] = {
+		label = "Wool",
 		weight = 1,
 		stack = true,
 		close = true,

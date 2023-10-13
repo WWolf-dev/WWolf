@@ -20,16 +20,11 @@ if FrameworkUse == "ESX" then
     AddEventHandler(playerLoadedEvent, function(xPlayer)
         ESX.PlayerData = xPlayer  -- Store player data locally
         PlayerLoaded = true
-
-        WashingBlips()
-        WashingNpcs()
     end)
 
-    AddEventHandler("onResourceStart", function(resource)
-        if resource == GetCurrentResourceName() then
-            WashingBlips()
-            WashingNpcs()
-        end
+    CreateThread(function()
+        WashingBlips()
+        WashingNpcs()
     end)
 
     function WashingBlips()

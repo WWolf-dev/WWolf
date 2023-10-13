@@ -562,7 +562,7 @@ if FrameworkUse == "ESX" then
 
 	RegisterServerEvent("Lys_EMS:Server:SendWebhooksPPA")
 	AddEventHandler("Lys_EMS:Server:SendWebhooksPPA", function(payload)
-		local webhookUrl = "https://discord.com/api/webhooks/1121470086994206862/Ma66j4M5I6zGY4jdQE-tSapY4nyO09ndcCbfaVQOFOBNHkgxqopp4X6GvChT6pH_Ozca"
+		local webhookUrl = "https://discord.com/api/webhooks/1146051699757301871/K35A1Art3iqnCQnuS-dgM1D7sNd2UXi-ko1SDAkp5psjOeH7RPYmrHEvUeD1YPO-VtPg"
 		PerformHttpRequest(webhookUrl, function(statusCode, text, headers)
 			if statusCode == 200 then
 				print("Message envoyé sur Discord avec succès.")
@@ -574,7 +574,7 @@ if FrameworkUse == "ESX" then
 
 	RegisterServerEvent("Lys_EMS:Server:SendWebhooksCheckup")
 	AddEventHandler("Lys_EMS:Server:SendWebhooksCheckup", function(payload)
-		local webhookUrl = "https://discord.com/api/webhooks/1121470086994206862/Ma66j4M5I6zGY4jdQE-tSapY4nyO09ndcCbfaVQOFOBNHkgxqopp4X6GvChT6pH_Ozca"
+		local webhookUrl = "https://discord.com/api/webhooks/1146051699757301871/K35A1Art3iqnCQnuS-dgM1D7sNd2UXi-ko1SDAkp5psjOeH7RPYmrHEvUeD1YPO-VtPg"
 		PerformHttpRequest(webhookUrl, function(statusCode, text, headers)
 			if statusCode == 200 then
 				print("Message envoyé sur Discord avec succès.")
@@ -586,7 +586,7 @@ if FrameworkUse == "ESX" then
 
 	RegisterServerEvent("Lys_EMS:Server:SendWebhooksRecruit")
 	AddEventHandler("Lys_EMS:Server:SendWebhooksRecruit", function(payload)
-		local webhookUrl = "https://discord.com/api/webhooks/1121470086994206862/Ma66j4M5I6zGY4jdQE-tSapY4nyO09ndcCbfaVQOFOBNHkgxqopp4X6GvChT6pH_Ozca"
+		local webhookUrl = "https://discord.com/api/webhooks/1146051699757301871/K35A1Art3iqnCQnuS-dgM1D7sNd2UXi-ko1SDAkp5psjOeH7RPYmrHEvUeD1YPO-VtPg"
 		PerformHttpRequest(webhookUrl, function(statusCode, text, headers)
 			if statusCode == 200 then
 				print("Message envoyé sur Discord avec succès.")

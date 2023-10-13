@@ -25,6 +25,7 @@ if FrameworkUse == "ESX" then
         AccessAccueilAmmuNPC()
         AccesPrivateAmmuNPC()
     end)
+    
     -- Register an event when the player is loaded
     RegisterNetEvent(playerLoadedEvent)
     AddEventHandler(playerLoadedEvent, function(xPlayer)
