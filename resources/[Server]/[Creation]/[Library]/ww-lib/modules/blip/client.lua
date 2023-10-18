@@ -8,6 +8,7 @@
 ---@param range boolean The range of the blip.
 ---@param label string The label of the blip.
 
+local listBlip = {}
 function ww.blip(data)
 
     for _, option in pairs(data.options) do
@@ -31,7 +32,13 @@ function ww.blip(data)
         BeginTextCommandSetBlipName('STRING')
         AddTextComponentSubstringPlayerName(label)
         EndTextCommandSetBlipName(blip)
+        table.insert(listBlip, blip)
+    end
+end
 
+function ww.clearBlip()
+    for _, blip in pairs(listBlip) do
+        RemoveBlip(blip)
     end
 end
 

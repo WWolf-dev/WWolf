@@ -32,11 +32,6 @@ client_scripts {
     'client/modules/menu/vehicleOptions.lua',
     'client/modules/menu/serverOptions.lua',
     'client/modules/menu/zoneOptions.lua',
-
-    -- 'client/modules/noclip.lua',
-    -- 'client/modules/menu/main.lua',
-    -- 'client/modules/menu/selfOptions.lua',
-    -- 'client/modules/menu/playerOptions.lua',
 }
 
 server_scripts {
@@ -50,9 +45,6 @@ server_scripts {
     'server/main.lua',
     'server/events.lua',
     'server/commands.lua',
-
-    -- 'server/callbacks.lua',
-    -- 'server/modules/spectate.lua',
 }
 
 dependencies {

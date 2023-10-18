@@ -40,9 +40,6 @@ TriggerEvent('chat:removeSuggestion', '/++adminmenu')
 RegisterKeyMapping('++adminmenu', Strings.keymapping_desc, 'keyboard', openKey)
 
 
-local test
-
-
 
 
 

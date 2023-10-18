@@ -1,7 +1,7 @@
 openKey = 'F9'
 UsingVehicleKeys = ""
 SkinMenu = "esx_skin"
-FuelSystem = ""
+FuelSystem = "legacyfuel"
 Inventory = "ox"
 SpeedMeasurement = "kmh" -- Options: 'mph' or 'kmh'
 
@@ -46,39 +46,39 @@ adminPerms = { -- Different ways of defining who has permission to access and ut
         enabled = true, -- Enable ace perms?
         -- Players with any of these perms will gain access to menu, but will be restricted in regards to features
         -- below, and allPerms is unrestricted.
-        allPerms = 'wasabi.adminmenu.allow', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.allow allow 
+        allPerms = 'WWolf.adminmenu.allow', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.allow allow 
         -- allPerms: Enable all permissions within admin menu
-        ban = 'wasabi.adminmenu.ban', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.ban allow 
+        ban = 'WWolf.adminmenu.ban', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.ban allow 
         -- ban: Enable all ban functions
-        kick = 'wasabi.adminmenu.kick', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.kick allow 
+        kick = 'WWolf.adminmenu.kick', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.kick allow 
         -- kick: Enable all kick functions
-        teleport = 'wasabi.adminmenu.teleport', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.teleport allow 
+        teleport = 'WWolf.adminmenu.teleport', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.teleport allow 
         -- teleport: Enable goto/bring player functions
-        zones = 'wasabi.adminmenu.zones', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.zones allow 
+        zones = 'WWolf.adminmenu.zones', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.zones allow 
         -- zones: enable access to zones system
-        money = 'wasabi.adminmenu.money', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.money allow
+        money = 'WWolf.adminmenu.money', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.money allow
         -- money: Enable all money related functions
-        items = 'wasabi.adminmenu.items', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.items allow 
+        items = 'WWolf.adminmenu.items', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.items allow 
         -- items: Ability to give items from menu
-        vehicles = 'wasabi.adminmenu.vehicles', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.vehicles allow 
+        vehicles = 'WWolf.adminmenu.vehicles', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.vehicles allow 
         -- vehicles: Enable vehicle related functions
-        revive = 'wasabi.adminmenu.revive', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.revive allow 
+        revive = 'WWolf.adminmenu.revive', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.revive allow 
         -- revive: Allows revive functions
-        heal = 'wasabi.adminmenu.heal', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.heal allow 
+        heal = 'WWolf.adminmenu.heal', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.heal allow 
         -- heal: Enable heal related functions
-        skin = 'wasabi.adminmenu.skin', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.skin allow 
+        skin = 'WWolf.adminmenu.skin', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.skin allow 
         -- skin: Enable skin menu related functions
-        invisible = 'wasabi.adminmenu.invisible', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.invisible allow 
+        invisible = 'WWolf.adminmenu.invisible', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.invisible allow 
         -- invisible: Enable toggle being invisible
-        godmode = 'wasabi.adminmenu.godmode', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.godmode allow 
+        godmode = 'WWolf.adminmenu.godmode', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.godmode allow 
         -- invisible: Enable toggle godmode
-        setped = 'wasabi.adminmenu.setped', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.setped allow 
+        setped = 'WWolf.adminmenu.setped', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.setped allow 
         -- setped: Enable setting ped from menu
-        noclip = 'wasabi.adminmenu.noclip', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.noclip allow 
+        noclip = 'WWolf.adminmenu.noclip', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.noclip allow 
         -- noclip: Enable toggle being no clip
-        inventory = 'wasabi.adminmenu.inventory', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.inventory allow 
+        inventory = 'WWolf.adminmenu.inventory', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.inventory allow 
         -- inventory: Enable inventory related functions
-        spectate = 'wasabi.adminmenu.spectate', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.spectate allow 
+        spectate = 'WWolf.adminmenu.spectate', -- Example in server.cfg: add_ace group.admin wasabi.adminmenu.spectate allow 
         -- spectate: Enable spectate ability within player options
 
     } 

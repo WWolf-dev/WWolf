@@ -1,25 +1,15 @@
 
 ================================================================
-======== Log Rotated - 13/10/2023, 00:00:00                     
+======== Log Rotated - 18/10/2023, 03:27:55                     
 ================================================================
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved [36m1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to CLEAR
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved player "White Wolf"
 
 ================================================================
-======== FXServer Starting - 13/10/2023, 00:27:58               
+======== FXServer Starting - 18/10/2023, 03:27:56               
 ================================================================
 [           resources] Scanning resources.
-[           resources] [0mFound 54 resources.
+[resources:amw-police] Warning: amw-policeJob does not have a resource manifest (fxmanifest.lua)
+[           resources] Found 56 resources.
+[           resources] 1 warning was encountered.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for sessionmanager
@@ -39,7 +29,7 @@
 [    c-scripting-core] Creating script environments for oxmysql
 [           resources] Started resource oxmysql
 [    c-scripting-core] Creating script environments for es_extended
-[           resources] [97mStarted resource es_extended
+[           resources] Started resource es_extended
 [    c-scripting-core] Creating script environments for cron
 [           resources] Started resource cron
 [    c-scripting-core] Creating script environments for ox_lib
@@ -50,9 +40,11 @@
 [           resources] Started resource ox_target
 [    c-scripting-core] Creating script environments for ox_inventory
 [           resources] Started resource ox_inventory
-[           resources] [0mStarted resource rprogress
+[    c-scripting-core] Creating script environments for cd_easytime
+[           resources] Started resource cd_easytime
+[           resources] Started resource rprogress
 [    c-scripting-core] Creating script environments for dolu_tool
-[           resources] [0mStarted resource dolu_tool
+[           resources] Started resource dolu_tool
 [    c-scripting-core] Creating script environments for esx_addonaccount
 [           resources] Started resource esx_addonaccount
 [    c-scripting-core] Creating script environments for esx_addoninventory
@@ -60,7 +52,7 @@
 [    c-scripting-core] Creating script environments for esx_status
 [           resources] Started resource esx_status
 [    c-scripting-core] Creating script environments for esx_basicneeds
-[           resources] [0mStarted resource esx_basicneeds
+[           resources] Started resource esx_basicneeds
 [    c-scripting-core] Creating script environments for esx_billing
 [           resources] Started resource esx_billing
 [    c-scripting-core] Creating script environments for esx_datastore
@@ -73,31 +65,33 @@
 [           resources] Started resource esx_optionalneeds
 [    c-scripting-core] Creating script environments for esx_society
 [           resources] Started resource esx_society
-[    c-scripting-core] [0mCreating script environments for illenium-appearance
+[    c-scripting-core] Creating script environments for illenium-appearance
 [           resources] Started resource illenium-appearance
 [    c-scripting-core] Creating script environments for ww-wipe
-[           resources] [97mStarted resource ww-wipe
+[           resources] Started resource ww-wipe
 [    c-scripting-core] Creating script environments for ww-vehicleRent
-[           resources] [0mStarted resource ww-vehicleRent
+[           resources] Started resource ww-vehicleRent
 [    c-scripting-core] Creating script environments for ww-blipsbuilder
 [           resources] Started resource ww-blipsbuilder
 [    c-scripting-core] Creating script environments for ww-carWash
 [           resources] Started resource ww-carWash
 [    c-scripting-core] Creating script environments for ww-beeFarm
-[           resources] [0mStarted resource ww-beeFarm
+[           resources] Started resource ww-beeFarm
 [    c-scripting-core] Creating script environments for ww-testOOP
 [           resources] Started resource ww-testOOP
 [    c-scripting-core] Creating script environments for ww-adminmenu
-[resources:ww-adminme] Warning: could not find server_script `server/commands.lua` (defined in fxmanifest.lua:42)
+[ script:ww-adminmenu] Error parsing script @ww-adminmenu/server/modules/admin_perm.lua in resource ww-adminmenu: @ww-adminmenu/server/modules/admin_perm.lua:53: <eof> expected near 'end'
+[    c-scripting-core] Failed to load script server/modules/admin_perm.lua.
+[resources:ww-adminme] Warning: could not find server_script `server/commands.lua` (defined in fxmanifest.lua:37)
 [           resources] Started resource ww-adminmenu (1 warning)
 [    c-scripting-core] Creating script environments for esx_loadingscreen
-[           resources] [0mStarted resource esx_loadingscreen
+[           resources] Started resource esx_loadingscreen
 [    c-scripting-core] Creating script environments for rpemotes
 [     script:rpemotes] RpEmotes by TayMcKenzieNZ, Mathu_lmn & MadsL loaded sucessfully.
-[           resources] [0mStarted resource rpemotes
+[           resources] Started resource rpemotes
 [resources:eclipseHos] Asset eclipseHospital/shmann_ehos_textures.ytd uses 22.8 MiB of physical memory.
 [resources:eclipseHos] Asset eclipseHospital/shmann_hospital_props.ytd uses 24.0 MiB of physical memory.
-[38;5;83m[           resources] Started resource eclipseHospital (2 warnings)
+[           resources] Started resource eclipseHospital (2 warnings)
 [    c-scripting-core] Creating script environments for esx_context
 [           resources] Started resource esx_context
 [           resources] Started resource esx_menu_default
@@ -112,137 +106,17 @@
 [     script:rpemotes] [rpemotes] Current Version: 1.3.2
 [     script:rpemotes] [rpemotes] Latest Version: 1.3.6
 [     script:rpemotes] [rpemotes] You are currently running an outdated version, please update to version 1.3.6
-[      script:oxmysql] [10.4.28-MariaDB] Database server connection established!
+[  script:cd_easytime] [cd_easytime] - Saved settings applied.
+[      script:oxmysql] [11.3.0-MariaDB] Database server connection established!
 [ script:ox_inventory] [info][0m Database contains 35 items.
+[  script:es_extended] [0m[INFO] ESX Legacy 1.10.1 initialized!
 [ citizen-server-impl]         fff                          
 [ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
 [ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
 [ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
 [ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
 [ citizen-server-impl]                                      
-[ citizen-server-impl] [32mAuthenticated with cfx.re Nucleus: https://wolfydev-7d4dbv.users.cfx.re/
-[  script:es_extended] [INFO] ESX Legacy 1.10.1 initialized!
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://wolfydev-7d4dbv.users.cfx.re/
+[       script:ox_lib] An update is available for ox_inventory (current version: 2.34.4)
+[       script:ox_lib] https://github.com/overextended/ox_inventory/releases/tag/v2.35.0
 [ script:ox_inventory] [info] Inventory has loaded 237 items
-[      script:hardcap] Connecting: Wolfy Dev
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Player "White Wolf" has connected to the server. ID: 1
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [0m[cd_easytime] - Saved settings applied.
-[  script:cd_easytime] =====================================
-[  script:cd_easytime] [cd_easytime] - New Update Available.
-[  script:cd_easytime] Current Version: 1.3.6.
-[  script:cd_easytime] New Version: 1.3.7.
-[  script:cd_easytime] Notes: minor fixes.
-[  script:cd_easytime] =====================================
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to CLEAR
-[ citizen-server-impl] server thread hitch warning: timer interval of 583 milliseconds
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to OVERCAST
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to EXTRASUNNY
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to CLOUDS
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to SMOG
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to FOGGY
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to SMOG
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[  script:cd_easytime] [cd_easytime] - Weather changed to FOGGY
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[  script:cd_easytime] [cd_easytime] - Weather changed to CLEAR
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[  script:cd_easytime] [cd_easytime] - Weather changed to OVERCAST
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[  script:cd_easytime] [cd_easytime] - Weather changed to EXTRASUNNY
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[  script:cd_easytime] [cd_easytime] - Weather changed to CLOUDS
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[  script:cd_easytime] [cd_easytime] - Weather changed to SMOG
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved [36m1 player over 0.0 ms
-[  script:cd_easytime] [cd_easytime] - Weather changed to FOGGY
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO[0m] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[  script:cd_easytime] [cd_easytime] - Weather changed to CLEAR
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:es_extended] [INFO] Saved 1 player over 0.0 ms
-[ citizen-server-impl] Server list query returned an error: System.Threading.Tasks.TaskCanceledException: A task was canceled. <- System.TimeoutException: A task was canceled. <- System.Threading.Tasks.TaskCanceledException: The request was canceled due to the configured HttpClient.Timeout of 30 seconds elapsing.
-[  script:cd_easytime] [cd_easytime] - Weather changed to OVERCAST
-[  script:es_extended] [[32mINFO] Saved player "White Wolf"

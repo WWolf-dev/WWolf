@@ -41,10 +41,10 @@ function ww.spawnNPC(data)
         end
 
         local ped = CreatePed(type, model, coords.x, coords.y, coords.z, coords.w, network, hosted)
+        SetEntityAsMissionEntity(ped, mission, mission)
         FreezeEntityPosition(ped, freeze)
         SetEntityInvincible(ped, god)
         SetBlockingOfNonTemporaryEvents(ped, eventBlocked)
-        SetEntityAsMissionEntity(ped, mission, mission)
 
         if animation and animation.dict and animation.name and (not scenario or not scenario.name) then
             TaskPlayAnim(ped, animation.dict, animation.name, 8.0, 8.0, -1, 1, 0, 0, 0, 0)

@@ -19,7 +19,8 @@ local function RepairCar()
     SetVehicleEngineOn(vehicle, true, true, false)
     SetVehicleDirtLevel(vehicle, 0.0)
     SetVehicleOnGroundProperly(vehicle)
-    SetVehicleFuelLevel(vehicle, SetMaxFuel(vehicle))
+    GetVehicleFuelLevel(vehicle)
+    SetVehicleFuelLevel(vehicle, GetFuelLevel(vehicle))
 end
 
 local function DeleteCar()
@@ -49,7 +50,7 @@ local function Refuel()
     local coords = GetEntityCoords(cache.ped)
     local vehicle = lib.getClosestVehicle(coords, 5.0, true)
     if not vehicle or not DoesEntityExist(vehicle) then return end
-    SetVehicleFuelLevel(vehicle, SetMaxFuel(vehicle))
+    SetVehicleFuelLevel(vehicle, 100.0)
 end
 
 local function GiveKeys()

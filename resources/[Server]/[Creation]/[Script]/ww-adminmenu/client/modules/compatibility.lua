@@ -80,13 +80,3 @@ function GetFuelLevel(Vehicle)
         return GetVehicleFuelLevel(Vehicle)
     end
 end
-
-function SetMaxFuel(Vehicle)
-    if FuelSystem == "legacyfuel" then
-        return exports['LegacyFuel']:SetFuel(Vehicle, 100)
-    elseif FuelSystem == 'ox' then
-        TriggerServerEvent('wasabi_adminmenu:setFuel', VehToNet(Vehicle))
-    else
-        return SetVehicleFuelLevel(Vehicle, 100)
-    end
-end

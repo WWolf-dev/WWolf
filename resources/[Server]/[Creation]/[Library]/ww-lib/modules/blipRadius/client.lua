@@ -7,6 +7,8 @@
 ---@param colour number The colour of the blipRadius.
 ---@param range boolean The range of the blipRadius.
 
+local listBlipRadius = {}
+
 function ww.blipRadius(data)
     for _,option in pairs(data.options) do
         local id = option.id or "defaultBlipID"
@@ -26,6 +28,13 @@ function ww.blipRadius(data)
         SetBlipRotation(blip, rotation)
         SetBlipColour(blip, colour)
         SetBlipAsShortRange(blip, range)
+        table.insert(listBlipRadius, blip)
+    end
+end
+
+function ww.clearBlipRadius()
+    for _, blip in pairs(listBlipRadius) do
+        RemoveBlip(blip)
     end
 end
 
