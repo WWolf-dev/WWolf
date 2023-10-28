@@ -1,0 +1,32 @@
+-- Check the ESX Version and initialize the framework
+if versionESX == "older" then
+    ESX = nil
+    CreateThread(function()
+        -- Wait for ESX to be initialized
+        while ESX == nil do
+            TriggerEvent(getSharedObjectEvent, function(obj) ESX = obj end)
+            Wait(0)
+        end
+    end)
+elseif versionESX == "newer" then
+    FrameworkExport()  -- Export new ESX functionalities
+end
+
+-- Register an event when the player is loaded
+RegisterNetEvent(playerLoadedEvent)
+AddEventHandler(playerLoadedEvent, function(xPlayer)
+    ESX.PlayerData = xPlayer  -- Store player data locally
+    PlayerLoaded = true
+end)
+
+AddEventHandler('onResourceStop', function(resourceName)
+    if (GetCurrentResourceName() ~= resourceName) then return end
+    local OpenMenu = lib.getOpenContextMenu()
+    lib.hideContext(OpenMenu)
+end)
+
+CreateThread(function()
+    RentalBlip()
+    RentalNPC()
+    AccessRentalMenu()
+end)

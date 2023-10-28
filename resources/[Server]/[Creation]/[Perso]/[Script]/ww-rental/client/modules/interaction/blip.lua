@@ -1,0 +1,11 @@
+function RentalBlip()
+    local blip = AddBlipForCoord(-492.0670, -679.7390, 32.9299)
+    SetBlipSprite(blip, 225)
+    SetBlipDisplay(blip, 4)
+    SetBlipScale(blip, 0.8)
+    SetBlipColour(blip, 2)
+    SetBlipAsShortRange(blip, true)
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentString("Rental")
+    EndTextCommandSetBlipName(blip)
+end

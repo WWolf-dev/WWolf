@@ -1,0 +1,33 @@
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 6775 Starting - 23/10/2023, 17:49:22
+================================================================
+
+================================================================
+======== Log Rotated - 23/10/2023, 17:49:22                     
+================================================================
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 6775 Starting - 23/10/2023, 17:49:33
+================================================================
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 6775 Starting - 23/10/2023, 17:50:33
+================================================================
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 6775 Starting - 23/10/2023, 17:51:00
+================================================================
+[17:51:07][WolfyDev] logged in from 127.0.0.1 via citizenfx
+[17:51:25][WolfyDev] executed "refresh"
+[17:51:28][WolfyDev] executed "ensure test"
+[17:51:49][WolfyDev] executed "refresh"
+[17:51:56][WolfyDev] executed "restart test"
+[17:52:36][WolfyDev] executed "refresh"
+[17:52:36][WolfyDev] executed "restart test"
+[17:52:49][WolfyDev] executed "refresh"
+[17:52:49][WolfyDev] executed "restart test"
+[17:52:59][WolfyDev] executed "refresh"
+[17:53:00][WolfyDev] executed "restart test"
+[17:53:40][WolfyDev] executed "refresh"
+[17:53:41][WolfyDev] executed "restart test"
